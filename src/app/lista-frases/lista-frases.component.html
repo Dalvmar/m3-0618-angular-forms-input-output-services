@@ -1,0 +1,13 @@
+
+<p>MIS FRASES</p>
+
+<div *ngFor="let frase of frases">
+  <app-frase
+    [texto]="frase.superfrase"
+    [popularidad]="frase.popularidad"
+    [id]="frase.id"
+    (onDelete)="eliminar($event)"
+  ></app-frase>
+</div>
+
+
